@@ -1,9 +1,7 @@
 import React from 'react';
 
 class PlayerCard extends React.Component {
-    constructor() {
-        super(); 
-    }
+    
 
     render(){
         return(
