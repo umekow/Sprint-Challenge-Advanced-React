@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import useFetchApi from './hooks/useFetchApi'
+import PlayerCard from './components/PlayerCard'
+
+
 
 function App() {
+   
+  const [players, setApi] = useFetchApi('http://localhost:5000/api/players'); 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Women's World Cup players</h1>
+
+      <img src= 'https://cdn.vox-cdn.com/uploads/chorus_image/image/64058776/1157200431.jpg.0.jpg' alt='wwc'/>
+      <div className="players">
+        {
+          
+            players.map(
+              player => {
+                return(
+                  <PlayerCard key={player.id} name={player.name} country={player.country} searches={player.searches} />
+                )
+            } 
+            )
+        
+      }
+      </div>
     </div>
   );
 }

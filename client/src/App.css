@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: auto; 
 }
 
 .App-logo {
@@ -30,4 +31,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img{
+  width: 70%;
+  padding: 5%; 
+  border-radius: 15px; 
+
+
+}
+.players{
+  display: flex; 
+  flex-wrap: wrap; 
+  margin: 0 auto; 
+  justify-content: space-evenly;
+
+}
+
+.playerCard {
+  width: 35%; 
+  margin: 2.5%; 
+  box-shadow: 5px 10px #888888;
+  border-radius: 10px; 
+  border: 1px solid blue; 
+}
+
+h3{
+  font-weight: bold; 
+  border-bottom: 1px solid blue; 
+  margin: 2.5%; 
 }
