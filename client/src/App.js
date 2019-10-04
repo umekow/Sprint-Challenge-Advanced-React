@@ -12,7 +12,9 @@ function App() {
   return (
     <div className="App">
       <h1>Women's World Cup players</h1>
-      <div className="players-container">
+
+      <img src= 'https://cdn.vox-cdn.com/uploads/chorus_image/image/64058776/1157200431.jpg.0.jpg' alt='wwc'/>
+      <div className="players">
         {
           
             players.map(
