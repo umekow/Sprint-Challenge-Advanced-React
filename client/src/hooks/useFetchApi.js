@@ -7,13 +7,15 @@ const useFetchApi = (endpoint)=> {
 
     useEffect(() => {
 
-        axios.get(url).then(
-            response => {
-                console.log(response.data)
-                setData(response.data); 
-            }
-        ).catch(
-            error => console.log(error)
+        axios
+            .get(url).then(
+                response => {
+                    //console.log(response.data)
+                    setData(response.data); 
+                }
+            )
+            .catch(
+                error => console.log(error)
             )
 
     }, [url]); 

@@ -18,7 +18,7 @@ function App() {
             players.map(
               player => {
                 return(
-                  <PlayerCard id={player.id} name={player.name} country={player.country} searches={player.searches} />
+                  <PlayerCard key={player.id} name={player.name} country={player.country} searches={player.searches} />
                 )
             } 
             )
