@@ -10,7 +10,9 @@ const useFetchApi = (endpoint, initialValue)=> {
             response => {
                 setData(response); 
             }
-        )
+        ).catch(
+            error => console.log(error)
+            )
 
     }, [data]); 
 

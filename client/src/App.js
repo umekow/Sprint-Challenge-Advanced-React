@@ -1,10 +1,19 @@
 import React from 'react';
 import './App.css';
+import useFetchApi from './hooks/useFetchApi'
 
 function App() {
+
+  const []
   return (
     <div className="App">
-      <h1>Help! I am empty</h1>
+      <h1>Women's World Cup players</h1>
+      <div className="players-container">
+        {
+
+
+        }
+      </div>
     </div>
   );
 }
